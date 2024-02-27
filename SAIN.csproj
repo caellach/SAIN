@@ -248,6 +248,7 @@
     <Compile Include="Editor\GUITabs.cs" />
     <Compile Include="Editor\IEditorCache.cs" />
     <Compile Include="Editor\Util\ModifyLists.cs" />
+    <Compile Include="Helpers\BotMoverHelper.cs" />
     <Compile Include="Helpers\ComponentHelpers.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Components\Extract\ExtractPositionFinder.cs" />
