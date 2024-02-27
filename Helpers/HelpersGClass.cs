@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
-using EFTCore = GClass455;
-using EFTFileSettings = GClass456;
-using EFTSettingsGroup = GClass458;
-using EFTSoundPlayer = GClass520;
-using EFTStatModifiersClass = GClass453;
-using EFTTime = GClass1190;
+using EFTCore = GClass531;
+using EFTFileSettings = GClass532;
+using EFTSettingsGroup = BotSettingsComponents;
+using EFTSoundPlayer = GClass598;
+using EFTStatModifiersClass = GClass529;
+using EFTTime = GClass1296;
 using EFTSearchPoint = PlaceForCheck;
 using Aki.Reflection.Patching;
 

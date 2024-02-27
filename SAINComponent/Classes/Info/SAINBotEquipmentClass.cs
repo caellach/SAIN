@@ -107,17 +107,17 @@ namespace SAIN.SAINComponent.Classes.Info
             WeaponClass = EnumValues.ParseWeaponClass(weapon.Template.weapClass);
 
             var mods = weapon.Mods;
-            for (int i = 0; i < mods.Length; i++)
+            foreach (var mod in mods)
             {
-                CheckMod(mods[i]);
-                if (mods[i].Slots.Length > 0)
+                CheckMod(mod);
+                if (mod.Slots.Length > 0)
                 {
-                    for (int j = 0; j < mods[i].Slots.Length; j++)
+                    for (int j = 0; j < mod.Slots.Length; j++)
                     {
-                        Item containedItem = mods[i].Slots[j].ContainedItem;
-                        if (containedItem != null && containedItem is Mod mod)
+                        Item containedItem = mod.Slots[j].ContainedItem;
+                        if (containedItem != null && containedItem is Mod containedMod)
                         {
-                            Type modType = mod.GetType();
+                            Type modType = containedMod.GetType();
                             if (IsSilencer(modType))
                             {
                                 HasSuppressor = true;

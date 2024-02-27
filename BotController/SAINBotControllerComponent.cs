@@ -49,8 +49,8 @@ namespace SAIN.Components
             BotExtractManager.Awake();
             BotSquads.Awake();
 
-            Singleton<GClass520>.Instance.OnGrenadeThrow += GrenadeThrown;
-            Singleton<GClass520>.Instance.OnGrenadeExplosive += GrenadeExplosion;
+            Singleton<GClass598>.Instance.OnGrenadeThrow += GrenadeThrown;
+            Singleton<GClass598>.Instance.OnGrenadeExplosive += GrenadeExplosion;
             AISoundPlayed += SoundPlayed;
             PlayerTalk += PlayerTalked;
         }
@@ -333,8 +333,8 @@ namespace SAIN.Components
 
                 AISoundPlayed -= SoundPlayed;
                 PlayerTalk -= PlayerTalked;
-                Singleton<GClass520>.Instance.OnGrenadeThrow -= GrenadeThrown;
-                Singleton<GClass520>.Instance.OnGrenadeExplosive -= GrenadeExplosion;
+                Singleton<GClass598>.Instance.OnGrenadeThrow -= GrenadeThrown;
+                Singleton<GClass598>.Instance.OnGrenadeExplosive -= GrenadeExplosion;
 
                 if (Bots.Count > 0)
                 {

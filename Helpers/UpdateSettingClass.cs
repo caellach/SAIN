@@ -2,7 +2,7 @@
 using SAIN.Preset.BotSettings.SAINSettings;
 using SAIN.Preset.GlobalSettings;
 using UnityEngine;
-using EFTSettingsGroup = GClass458;
+using EFTSettingsGroup = BotSettingsComponents;
 
 namespace SAIN.Helpers
 {

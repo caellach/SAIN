@@ -2,6 +2,7 @@
 using EFT.InventoryLogic;
 using EFT.Weather;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static EFT.Player;
 
@@ -26,7 +27,7 @@ namespace SAIN.Helpers
                             float speedFactor = CalcVelocityFactor(weapon);
                             bool subsonic = IsSubsonic(weapon.CurrentAmmoTemplate.InitialSpeed, speedFactor);
                             float supModifier = GetSuppressorMod(subsonic, soundType);
-                            float muzzleLoudness = GetMuzzleLoudness(weapon.Mods);
+                            float muzzleLoudness = GetMuzzleLoudness(weapon.Mods.ToArray<Mod>());
                             float baseAudibleRange = AudibleRange(weapon.Template.ammoCaliber);
 
                             float result = (supModifier * muzzleLoudness * baseAudibleRange).Round10();

@@ -1,4 +1,5 @@
 ﻿using EFT;
+using SAIN.Helpers;
 using SAIN.SAINComponent.SubComponents.CoverFinder;
 using System;
 using System.Collections.Generic;
@@ -183,7 +184,7 @@ namespace SAIN.SAINComponent.Classes.Decision
                 return false;
             }
             bool CheckTime = timeChangeDec < 5f;
-            bool Moving = BotOwner.Mover?.RealDestPoint != Vector3.one && BotOwner.Mover?.DirDestination.magnitude > 2f;
+            bool Moving = BotOwner.Mover?.RealDestPoint != Vector3.one && BotOwner.Mover?.GetDirDestination().magnitude > 2f;
             return Running && Moving && CheckTime;
         }
 

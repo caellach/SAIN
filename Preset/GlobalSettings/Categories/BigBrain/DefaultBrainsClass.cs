@@ -67,7 +67,8 @@ namespace SAIN.Preset.GlobalSettings.Categories
         const string BigBrainFolder = "BigBrain - DO NOT TOUCH";
 
 
-        /*
+        /* 
+         * I did not convert these to version 28744 from 26535
         GClass219 BotBaseBrainClass     return "ArenaFighter";
         GClass220 BotBaseBrainClass     return "BossBully";
         GClass238 GClass237		        return "BossGluhar";
